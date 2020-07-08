@@ -24,12 +24,10 @@ public class ApiController {
 
     }
 
-
     @GetMapping
     public List<Film> sendEmailToUser(){
         return filmList;
     }
-
 
     @PostMapping("/addFilm")
     @MailSender
